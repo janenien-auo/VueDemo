@@ -1,77 +1,60 @@
 <template>
-  <nav class="sb-topnav navbar navbar-expand navbar-dark navbg">
-    <div class="d-flex justify-content-between">
-      <a id="sidebarCollapse" >
-        <font-awesome-icon icon="align-justify" />
+  <!-- <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="" />
+        <span class="d-none d-lg-block">EDA Demo</span>
       </a>
-        <a>
-         <font-awesome-icon :icon="['fas', 'user']" />
-      </a>
+      <i id="sidebarCollapse" class="bi bi-list toggle-sidebar-btn"></i>
     </div>
-    
 
-  
-  </nav>
+    <div class="header-nav ms-auto bd-highlight">
+      <a
+        class="nav-link nav-profile d-flex justify-content-end pe-0"
+        href="#"
+        data-bs-toggle="dropdown"
+      >
+        <font-awesome-icon :icon="['fas', 'user']" />
+        <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+      </a>
+
+      <UserInfo />
+    </div>
+  </header> -->
+
+  <div class="header fixed-top d-flex justify-content-between">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="" />
+        <span class="d-none d-lg-block">EDA Demo</span>
+      </a>
+      <i id="sidebarCollapse" class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+
+    <div class="header-nav ms-auto bd-highlight">
+      <a
+        class="nav-link nav-profile d-flex justify-content-end pe-0"
+        href="#"
+        data-bs-toggle="dropdown"
+        style="padding-top: 20px;"
+      >
+        <font-awesome-icon :icon="['fas', 'user']" />
+        <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+      </a>
+
+      <UserInfo />
+    </div>
+  </div>
 </template>
 
 <script>
-import "bootstrap-css";
-import "bootstrap";
-
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faAlignJustify } from "@fortawesome/free-solid-svg-icons";
-
-library.add(faAlignJustify);
+import UserInfo from "@/components/userinfo";
 
 export default {
   name: "Header",
+  components: { UserInfo },
 };
 </script>
 
 <style scoped>
-.bg-dark {
-  background-color: #0c3a5a !important;
-}
-
-.navbg {
-  background-color: #6f80c9 !important;
-}
-
-.topnav {
-  padding-left: 0;
-  height: 3.625rem;
-  z-index: 1039;
-  font-size: 0.9rem;
-}
-.topnav .navbar-brand {
-  width: 15rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: 0;
-  font-size: 1rem;
-  font-weight: bold;
-}
-.topnav .navbar-brand img {
-  height: 0.8rem;
-}
-.topnav.navbar-dark #sidebarCollapse {
-  color: rgba(255, 255, 255, 0.5);
-}
-.topnav.navbar-dark .navbar-brand {
-  color: #fff;
-}
-.topnav.navbar-light #sidebarCollapse {
-  color: #1f2d41;
-}
-.topnav.navbar-light .navbar-brand {
-  color: #323f52;
-}
-.topnav .dropdown {
-  position: static;
-}
-.topnav .dropdown .dropdown-menu {
-  width: calc(100% - 1.5rem);
-  right: 0.75rem;
-  left: 0.75rem;
-}
 </style>

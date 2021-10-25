@@ -1,61 +1,240 @@
 <template>
-  <nav id="sidebar">
-    <div class="sidebar-header">
-      <h3>EDA Demo</h3>
-    </div>
+  <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
 
-    <ul class="list-unstyled components">
-      <li class="active">
-        <a
-          href="#homeSubmenu"
-          data-toggle="collapse"
-          aria-expanded="false"
-          class="dropdown-toggle"
-          >Home</a
-        >
-        <ul class="collapse list-unstyled" id="homeSubmenu">
-          <li>
-            <a href="#">Home 1</a>
-          </li>
-          <li>
-            <a href="#">Home 2</a>
-          </li>
-          <li>
-            <a href="#">Home 3</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a
-          href="#pageSubmenu"
-          data-toggle="collapse"
-          aria-expanded="false"
-          class="dropdown-toggle"
-          >Pages</a
-        >
-        <ul class="collapse list-unstyled" id="pageSubmenu">
-          <li>
-            <a href="#">Page 1</a>
-          </li>
-          <li>
-            <a href="#">Page 2</a>
-          </li>
-          <li>
-            <a href="#">Page 3</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Portfolio</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-  </nav>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#components-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-menu-button-wide"></i><span>Components</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="components-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="components-alerts.html">
+                <i class="bi bi-circle"></i><span>Alerts</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-accordion.html">
+                <i class="bi bi-circle"></i><span>Accordion</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-badges.html">
+                <i class="bi bi-circle"></i><span>Badges</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-breadcrumbs.html">
+                <i class="bi bi-circle"></i><span>Breadcrumbs</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-buttons.html">
+                <i class="bi bi-circle"></i><span>Buttons</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-cards.html">
+                <i class="bi bi-circle"></i><span>Cards</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-carousel.html">
+                <i class="bi bi-circle"></i><span>Carousel</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-list-group.html">
+                <i class="bi bi-circle"></i><span>List group</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-modal.html">
+                <i class="bi bi-circle"></i><span>Modal</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-tabs.html">
+                <i class="bi bi-circle"></i><span>Tabs</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-pagination.html">
+                <i class="bi bi-circle"></i><span>Pagination</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-progress.html">
+                <i class="bi bi-circle"></i><span>Progress</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-spinners.html">
+                <i class="bi bi-circle"></i><span>Spinners</span>
+              </a>
+            </li>
+            <li>
+              <a href="components-tooltips.html">
+                <i class="bi bi-circle"></i><span>Tooltips</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Components Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#forms-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-journal-text"></i><span>Forms</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="forms-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="forms-elements.html">
+                <i class="bi bi-circle"></i><span>Form Elements</span>
+              </a>
+            </li>
+            <li>
+              <a href="forms-layouts.html">
+                <i class="bi bi-circle"></i><span>Form Layouts</span>
+              </a>
+            </li>
+            <li>
+              <a href="forms-editors.html">
+                <i class="bi bi-circle"></i><span>Form Editors</span>
+              </a>
+            </li>
+            <li>
+              <a href="forms-validation.html">
+                <i class="bi bi-circle"></i><span>Form Validation</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Forms Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="tables-general.html">
+                <i class="bi bi-circle"></i><span>General Tables</span>
+              </a>
+            </li>
+            <li>
+              <a href="tables-data.html">
+                <i class="bi bi-circle"></i><span>Data Tables</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#charts-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-bar-chart"></i><span>Charts</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="charts-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="charts-chartjs.html">
+                <i class="bi bi-circle"></i><span>Chart.js</span>
+              </a>
+            </li>
+            <li>
+              <a href="charts-apexcharts.html">
+                <i class="bi bi-circle"></i><span>ApexCharts</span>
+              </a>
+            </li>
+            <li>
+              <a href="charts-echarts.html">
+                <i class="bi bi-circle"></i><span>ECharts</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Charts Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-gem"></i><span>Icons</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="icons-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="icons-bootstrap.html">
+                <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
+              </a>
+            </li>
+            <li>
+              <a href="icons-remix.html">
+                <i class="bi bi-circle"></i><span>Remix Icons</span>
+              </a>
+            </li>
+            <li>
+              <a href="icons-boxicons.html">
+                <i class="bi bi-circle"></i><span>Boxicons</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Icons Nav -->
+      </ul>
+    </aside>
 </template>
 
 <script>
@@ -65,84 +244,5 @@ export default {
 </script>
 
 <style scoped>
-/*
-    DEMO STYLE
-*/
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-body {
-  font-family: "Poppins", sans-serif;
-  background: #fafafa;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  line-height: 1.7em;
-  color: #999;
-}
-
-a,
-a:hover,
-a:focus {
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.line {
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px dashed #ddd;
-  margin: 40px 0;
-}
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
-
-#sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  background: #7386d5;
-  color: #fff;
-  transition: all 0.3s;
-}
-
-#sidebar.active {
-  margin-left: -250px;
-}
-
-#sidebar .sidebar-header {
-  padding: 20px;
-  background: #6d7fcc;
-}
-
-#sidebar ul.components {
-  padding: 20px 0;
-  /* border-bottom: 1px solid #47748b; */
-}
-
-#sidebar ul p {
-  color: #fff;
-  padding: 10px;
-}
-
-#sidebar ul li a {
-  padding: 10px;
-  font-size: 1.1em;
-  display: block;
-}
-
-#sidebar ul li a:hover {
-  color: #7386d5;
-  background: #fff;
-}
-
-#sidebar ul li.active > a,
-a[aria-expanded="true"] {
-  color: #fff;
-  background: #6d7fcc;
-}
 </style>

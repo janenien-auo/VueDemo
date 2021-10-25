@@ -1,12 +1,10 @@
 <template>
-  <div class="wrapper">
-    <!-- Sidebar -->
+  <div id="body">
+    <HeaderNav />
     <Sidebar />
-    <!-- Page Content -->
-    <div id="content">
-      <header-nav />
+    <main id="main" class="main">
       <router-view />
-    </div>
+    </main>
   </div>
 </template>
 
@@ -20,19 +18,18 @@ import "bootstrap";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faAlignLeft } from "@fortawesome/free-solid-svg-icons";
 
-
 library.add(faAlignLeft);
 
 export default {
   name: "Layout",
   components: {
-    Sidebar,  
+    Sidebar,
     HeaderNav,
   },
   mounted() {
     $(document).ready(function () {
       $("#sidebarCollapse").on("click", function () {
-        $("#sidebar").toggleClass("active");
+        $("#body").toggleClass("toggle-sidebar");
       });
     });
   },
