@@ -4,7 +4,7 @@
     <Sidebar />
     <!-- Page Content -->
     <div id="content">
-      <Header />
+      <header-nav />
       <router-view />
     </div>
   </div>
@@ -12,7 +12,7 @@
 
 <script>
 import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
+import HeaderNav from "./components/HeaderNav";
 import $ from "jquery";
 import "bootstrap-css";
 import "bootstrap";
@@ -20,13 +20,14 @@ import "bootstrap";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faAlignLeft } from "@fortawesome/free-solid-svg-icons";
 
+
 library.add(faAlignLeft);
 
 export default {
   name: "Layout",
   components: {
-    Sidebar,
-    Header,
+    Sidebar,  
+    HeaderNav,
   },
   mounted() {
     $(document).ready(function () {

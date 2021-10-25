@@ -5,6 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    isTestApi: true, //Do the website use mock api
     name: "",
     dep: "",
   },
@@ -43,6 +44,7 @@ export default new Vuex.Store({
   },
   modules: {},
   getters: {
+    isTestApi: (state) => state.isTestApi,
     name: (state) => state.name,
     dep: (state) => state.dep,
   },

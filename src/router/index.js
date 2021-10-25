@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 //import Home from "../views/Home.vue";
-import Layout from "@/layout/Layout";
+import Layout2 from "@/layout/Layout2";
 
 Vue.use(VueRouter);
 
@@ -18,7 +18,7 @@ const routes = [
   // }, 
   {
     path: "/",
-    component: Layout,
+    component: Layout2,
     children: [{ path: "/", component: () => import("../views/About.vue") }],
   }
 ];
